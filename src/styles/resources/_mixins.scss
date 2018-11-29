@@ -1,0 +1,16 @@
+@mixin bgimage() {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 400px;
+}
+
+@mixin divider() {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+@mixin mobile() {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}

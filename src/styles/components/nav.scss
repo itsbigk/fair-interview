@@ -1,0 +1,8 @@
+.nav {
+  @include divider();
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+  height: 69px;
+  padding: 20px 50px;
+}

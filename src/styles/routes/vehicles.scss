@@ -1,0 +1,34 @@
+.vehicles {
+  width: 100%;
+
+  .vehicle {
+    margin-top: 25px;
+
+    .heart {
+      color: #BE4BDB
+    }
+
+    &-image {
+      @include bgimage();
+    }
+
+    &-info-details {
+      color: gray;
+      line-height: 25px;
+      margin-top: 15px;
+    }
+  }
+
+  &-container {
+    padding: 50px;
+  }
+
+  &-pagination {
+    margin-top: 25px;
+  }
+
+  input[type="checkbox"] {
+    height: 30px;
+    width: 30px;
+  }
+}

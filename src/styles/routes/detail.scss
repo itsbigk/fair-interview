@@ -1,0 +1,67 @@
+.detail {
+  padding: 50px;
+
+  &-error {
+    font-size: 50px;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  &-image {
+    @include bgimage();
+
+    &-count {
+      margin: auto;
+      width: 80%;
+    }
+  }
+
+  &-inner {
+    background-color: #FFF;
+    margin: 10px auto;
+  }
+
+  &-info {
+    flex-direction: column;
+    padding: 25px;
+
+    .model {
+      font-weight: bold;
+      font-size: 30px;
+      margin: 10px 5px;
+    }
+
+    .mileage {
+      @include divider();
+
+      .count {
+        color: $orange;
+      }
+    }
+
+    .payments {
+      margin: 25px 0;
+
+      @include mobile() {
+        display: flex;
+      }
+
+      .payment {
+        padding: 0;
+
+        &-type {
+          font-size: 25px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .price {
+        font-size: 30px;
+      }
+
+      .monthly {
+        color: $orange;
+      }
+    }
+  }
+}
